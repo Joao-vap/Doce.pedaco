@@ -1,0 +1,265 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #f7ef4f;
+	font-family: 'Playfair Display', serif;
+}
+
+/**HEADER**/
+
+#header-nav {
+	background-color: #d77c20;
+	border-radius: 0;
+	border: 0;
+}
+
+/**LOGO**/
+
+#logo-img {
+	background: url('../recursos/icone.jpg') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0px;
+	border: 1px solid black;
+}
+
+/**BRAND NAME**/
+
+.navbar-brand {
+	padding-top: 30px;
+}
+
+.navbar-brand h1 {
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+.navbar-brand p {
+	color: #000000;
+	text-transform: uppercase;
+	font-size: .8em;
+	margin-top: 15px;
+}
+
+.navbar-brand p span {
+	vertical-align: middle;
+}
+
+/**NAV itens**/
+
+#nav-list {
+	margin-top: 15px;
+}
+
+#nav-list a {
+	color: #f7ef4f;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background-color: #d72620;
+}
+
+#nav-list span {
+	font-size: 1.3em;
+}
+
+#contato {
+	margin-top: 5px;
+}
+
+#contato a {
+	text-align: right;
+	padding-bottom: 0;
+}
+
+#contato div {
+	color: #010101;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #d72620;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+
+/**FOOTER**/
+
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+#conecte, #lema > span {
+	line-height: 2;
+}
+
+#conecte > span, #lema > span {
+	font-size: 1.3em;
+}
+
+#lema > p {
+	font-style: italic;
+}
+
+/**HOMEPAGE**/
+
+.container .jumbotron {
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+}
+
+#comemorativos-tile, #menu-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 20px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+
+#comemorativos-tile:hover, #menu-tile:hover {
+	box-shadow: 0 1px 5px 1px #d72620;
+}
+
+#comemorativos-tile {
+	background: url('../recursos/especial.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile {
+	background: url('../recursos/itens.jpg') no-repeat;
+	background-position: center;
+}
+
+#comemorativos-tile span, #menu-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+/**Media query**/
+
+@media (min-width:1200px){
+
+	.container .jumbotron {
+		float: center;
+		background: url('../recursos/chamarizlg.jpg') no-repeat;
+		height: 646px;
+	}
+
+}
+
+@media (min-width:992px) and (max-width: 1199px) {
+
+	#logo-img {
+		background: url('../recursos/icone2.jpg') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+
+	.container .jumbotron {
+		background: url('../recursos/chamarizmd.jpg') no-repeat;
+		height: 558px;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.container .jumbotron {
+		background: url('../recursos/chamarizsm.jpg') no-repeat;
+		height: 432px;
+	}
+	
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+
+	.navbar-brand p {
+		font-size: .6em;
+		margin-top: 5px;
+	}
+
+	.navbar-brand p svg {
+		height: 10px;
+	}
+
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+
+	#collapsable-nav a span{
+		font-size: 1.0em;
+		margin-right: 10px;
+	}
+
+	#call-btn > a {
+    	font-size: 1.2em;
+    	display: block;
+    	margin: 0 10px;
+    	padding: 5px;
+    	border: 2px solid #fff;
+    	background-color: #daa520;
+    	color: black;
+    }
+
+    #xs-deliver {
+    	margin-top: 5px;
+    	font-size: .7em;
+    	letter-spacing: .1em;
+    	text-transform: uppercase;
+    	color: black;
+    }
+
+    .container .jumbotron {
+		margin-top: 30px;
+		padding: 0;
+	}
+
+	.panel-footer section {
+		text-align: center;
+	}
+
+	.panel-footer section hr {
+		width: 50%;
+	}
+
+
+}
+}
